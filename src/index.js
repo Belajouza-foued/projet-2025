@@ -4,28 +4,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './pages/register';
 import Navbar from './components/navbar/Navbar';
-
-
-
- // ✅ Import des traductions
-
+import Login from './pages/Login';
 const App = () => {
-  
-
-   
-  return (
+   return (
     <>
-    
-      
-     
+       
       <Routes>
         <Route path="/" element={<Navbar/>} />
-        
-       
         <Route path="register" element={<Register />} />
-   
-        
-       
+        <Route path="login" element={<Login />} />
       </Routes>
      
     </>
