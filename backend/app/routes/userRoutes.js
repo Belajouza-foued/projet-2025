@@ -12,7 +12,7 @@ const router = express.Router();
 // Route pour l'enregistrement avec l'upload de l'image de profil
 router.post('/register', register);
 router.post('/login', login);
-router.post('/profile',  authMiddleware ,profile);
+router.get('/profile',  authMiddleware , profile);
 
 // Route de connexion
 
